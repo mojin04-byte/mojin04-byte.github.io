@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>소개 | 서용승 포트폴리오</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .table-hover tbody tr:hover {
+            background-color: #f1f1f1;
+        }
+    </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
@@ -27,26 +32,89 @@
 
     <div class="container my-5">
         <h2 class="border-bottom pb-2 mb-4">👷 엔지니어 소개</h2>
-        <div class="row">
-            <div class="col-md-4">
-                                <p class="text-muted mt-2 text-center">▲ 신뢰를 주는 엔지니어</p>
+        <div class="row mb-5">
+            <div class="col-md-4 text-center">
+                <img src="https://via.placeholder.com/300x350?text=Engineer+Profile" class="img-fluid rounded shadow mb-2" alt="프로필 사진">
+                <p class="text-muted fw-bold">▲ 현장 중심 엔지니어 서용승</p>
             </div>
+            
             <div class="col-md-8">
-                <h3>"현장의 언어를 이해하는 14년차 엔지니어"</h3>
+                <h3 class="fw-bold text-primary">"현장의 언어를 이해하는 베테랑 엔지니어"</h3>
                 <p class="lead mt-3">
                     안녕하세요. PLC 및 HMI 시스템 통합 구축을 전문으로 하는 서용승입니다.<br>
-                    단순한 기계 동작을 넘어, 운영자가 가장 편하게 관리할 수 있는 최적의 시스템을 설계합니다.
+                    육군 전산 운용 경험부터 시작하여 다양한 산업 현장의 유지관리 및 시공 경험을 보유하고 있습니다. 단순한 기계 동작을 넘어, 운영자가 가장 편하게 관리할 수 있는 최적의 시스템을 설계합니다.
                 </p>
-                <hr>
-                <ul class="list-unstyled">
-                    <li class="mb-2"><strong>📍 거주지:</strong> 경기도 수원시 권선구</li>
-                    <li class="mb-2"><strong>📧 이메일:</strong> mojin04@gmail.com</li>
-                    <li class="mb-2"><strong>💼 주요 분야:</strong> 하수/정수 처리 시설, 공장 자동화</li>
-                    <li class="mb-2"><strong>🎯 목표:</strong> 안정적인 무인 자동화 시스템 구현</li>
-                </ul>
+                
+                <div class="card bg-light border-0 mt-4">
+                    <div class="card-body">
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-2"><strong>📍 거주지:</strong> 경기도 수원시 권선구</li>
+                            <li class="mb-2"><strong>📧 이메일:</strong> mojin04@gmail.com</li>
+                            <li class="mb-2"><strong>💼 주요 업무:</strong> PLC/HMI 시공 및 유지관리, 자동화 시스템 설계</li>
+                            <li class="mb-2"><strong>🎯 목표:</strong> 안정적인 무인 자동화 시스템 구현 및 효율화</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h4 class="mt-4 border-bottom pb-2">🏆 보유 자격증</h4>
+                <div class="mt-3">
+                    <span class="badge bg-secondary p-2 me-2">정보처리기능사 (1999)</span>
+                    <span class="badge bg-secondary p-2 me-2">전자계산기기능사 (1998)</span>
+                </div>
             </div>
         </div>
+
+        <h3 class="border-bottom pb-2 mb-3">📅 근무 경력 (Work History)</h3>
+        <div class="table-responsive">
+            <table class="table table-hover align-middle">
+                <thead class="table-light">
+                    <tr>
+                        <th scope="col" style="width: 25%;">근무 기간</th>
+                        <th scope="col" style="width: 25%;">회사명</th>
+                        <th scope="col">직위 / 담당 업무</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2023.01 ~ 2025.08</td>
+                        <td class="fw-bold">하나시스템</td>
+                        <td>과장 / 명암유원지 제수문 제어시스템 및 무인원격감시 유지관리</td>
+                    </tr>
+                    <tr>
+                        <td>2022.04 ~ 2022.08</td>
+                        <td>첨단정보통신(주)</td>
+                        <td>과장 / 산불무인감시카메라 유지보수 용역</td>
+                    </tr>
+                    <tr>
+                        <td>2019.06 ~ 2022.04</td>
+                        <td>(주)파워테크놀로지</td>
+                        <td>과장 / 포항~삼척 철도공사 통신선로 신설 및 CCTV 설치 시공</td>
+                    </tr>
+                    <tr>
+                        <td>2015.03 ~ 2017.09</td>
+                        <td>(주)맨컴</td>
+                        <td>과장 / 목포 대양이로 프로세스 제어 및 충주하수 개량 계장제어</td>
+                    </tr>
+                    <tr>
+                        <td>2002.05 ~ 2004.06</td>
+                        <td class="text-muted">대한민국 육군</td>
+                        <td class="text-muted">병장 / 야전통신운용 및 운용</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p>
+                Email: mojin04@gmail.com | 
+                Homepage: <a href="http://mojin04.ipdisk.co.kr:8000/apps/wordpress54" target="_blank" class="text-white text-decoration-none">My Blog</a> | 
+                GitHub: @mojin04-byte
+            </p>
+            <p>&copy; 2026 Yongseung Seo. All rights reserved.</p>
+        </div>
+    </footer>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
