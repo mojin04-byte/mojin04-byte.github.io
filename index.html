@@ -3,173 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>서용승 | PLC & HMI 엔지니어 포트폴리오</title> <style>
-        /* --- 전체 디자인 설정 (CSS) --- */
-        :root {
-            --primary-color: #0056b3; /* 포인트 색상 (진한 파랑) */
-            --bg-color: #f4f7f6; /* 배경색 (연한 회색) */
-            --text-color: #333; /* 기본 글자색 */
-        }
-        body {
-            font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: var(--bg-color);
-            color: var(--text-color);
-        }
-        .container {
-            width: 90%;
-            max-width: 1000px; /* 최대 너비 설정 */
-            margin: auto;
-            overflow: hidden;
-            padding: 20px;
-        }
-        /* --- 헤더 영역 --- */
-        header {
-            background: #333;
-            color: #fff;
-            padding-top: 30px;
-            min-height: 70px;
-            border-bottom: var(--primary-color) 3px solid;
-        }
-        header a {
-            color: #fff;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 16px;
-        }
-        header h1 {
-            margin: 0;
+    <title>서용승 | Smart Automation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* 커스텀 스타일 */
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1581092921461-39b9d08a9b21?auto=format&fit=crop&w=1920');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
             text-align: center;
-            padding-bottom: 10px;
         }
-        header span { color: var(--primary-color); } /* 이름 강조 */
-
-        /* --- 메인 비주얼 영역 --- */
-        #showcase {
-            min-height: 400px;
-            background: url('https://images.unsplash.com/photo-1581092921461-39b9d08a9b21?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80') no-repeat center center/cover;
-            text-align: center;
-            color: #ffffff;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            position: relative;
+        .card-custom {
+            transition: transform 0.3s;
         }
-        #showcase::after { /* 배경 이미지 어둡게 처리 */
-            content: '';
-            position: absolute;
-            top: 0; left: 0; width: 100%; height: 100%;
-            background: rgba(0, 0, 0, 0.6);
-        }
-        #showcase .content-wrap {
-            z-index: 2; /* 텍스트를 배경 위로 올림 */
-            padding: 20px;
-        }
-        #showcase h1 {
-            font-size: 50px;
-            margin-bottom: 10px;
-        }
-        #showcase p {
-            font-size: 20px;
-        }
-
-        /* --- 섹션 공통 스타일 --- */
-        section {
-            padding: 40px 0;
-            background: #fff;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* 부드러운 그림자 */
-            border-radius: 8px; /* 모서리 둥글게 */
-        }
-        section h2 {
-            text-align: center;
-            margin-bottom: 30px;
-            color: var(--primary-color);
-        }
-        .section-content {
-            padding: 0 40px;
-        }
-
-        /* --- 기술 스택 리스트 스타일 --- */
-        .skills-list {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            list-style: none;
-            padding: 0;
-        }
-        .skills-list li {
-            background: var(--bg-color);
-            margin: 5px 10px;
-            padding: 10px 20px;
-            border-radius: 20px;
-            font-weight: bold;
-            color: var(--primary-color);
-        }
-
-        /* --- 푸터 영역 --- */
-        footer {
-            padding: 20px;
-            margin-top: 20px;
-            color: #ffffff;
-            background-color: #333;
-            text-align: center;
+        .card-custom:hover {
+            transform: translateY(-5px); /* 마우스 올리면 살짝 뜸 */
         }
     </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1><span>서용승</span> 포트폴리오</h1> </div>
-    </header>
 
-    <section id="showcase">
-        <div class="content-wrap">
-            <h1>Smart Automation Builder</h1>
-            <p>효율적이고 안정적인 PLC/HMI 시스템을 설계합니다.</p>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Yongseung.Seo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">홈</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">소개</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">기술스택</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">프로젝트</a></li>
+                    <li class="nav-item"><a class="nav-link text-warning" href="board.html">📋 엔지니어 게시판</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Smart Automation Builder</h1>
+            <p class="lead">14년차 PLC / HMI 전문 엔지니어 서용승입니다.</p>
+            <a href="#contact" class="btn btn-primary btn-lg mt-3">프로젝트 문의하기</a>
         </div>
     </section>
 
-    <div class="container">
-        <section id="about">
-            <h2>엔지니어 소개</h2>
-            <div class="section-content">
-                <p>
-                    안녕하세요. 14년차 PLC/HMI 전문 엔지니어 서용승입니다.<br>
-                    다양한 산업 현장의 자동화 시스템 구축 경험을 바탕으로 최적의 솔루션을 제공합니다.<br>
-                    안정적인 시스템 설계와 PLC 프로그래밍 및 HMI 프로그래밍에 강점이 있습니다.
-                </p>
+    <div class="container my-5" id="about">
+        <div class="row text-center">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 card-custom shadow-sm">
+                    <div class="card-body">
+                        <h3 class="card-title text-primary">PLC Control</h3>
+                        <p class="card-text">LS XGT, Mitsubishi, Siemens 등 다양한 PLC 시스템 제어 및 로직 설계</p>
+                    </div>
+                </div>
             </div>
-        </section>
-
-        <section id="skills">
-            <h2>주요 보유 기술</h2>
-            <ul class="skills-list">
-                <li>LS PLC (XGT Series)</li>                
-                <li>CIMON SCADA</li>
-                <li>AutoBase SCADA</li>
-                <li>AutoCAD 电気設計</li>
-                <li>MODBUS통신</li>
-            </ul>
-        </section>
-
-        <section id="projects">
-            <h2>주요 경력 및 프로젝트</h2>
-            <div class="section-content">
-                <ul>
-                    <li><strong>[2025] 경주 유화사업 프로젝트</strong>: PLC 프로그램 수정 및 HMI 작화, 시운전 완료.</li>
-                    <li><strong>[2025] 원주 3군사령부 전력감시 프로젝트 </strong>: 전체 시스템 설계 및 서보 제어 구현.</li>                    
-                </ul>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 card-custom shadow-sm">
+                    <div class="card-body">
+                        <h3 class="card-title text-success">HMI / SCADA</h3>
+                        <p class="card-text">CIMON, AutoBase, Pro-face 작화 및 시스템 모니터링 구축</p>
+                    </div>
+                </div>
             </div>
-        </section>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 card-custom shadow-sm">
+                    <div class="card-body">
+                        <h3 class="card-title text-info">System Design</h3>
+                        <p class="card-text">AutoCAD 전기 설계, MODBUS 통신 및 시운전 완벽 대응</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <footer>
-        <p>Contact: mojin04@gmail.com | GitHub: @mojin04-byte</p>
-        <p>© 2026 Yongseung Seo. All rights reserved.</p>
+    <footer class="bg-dark text-white text-center py-4" id="contact">
+        <div class="container">
+            <p>Email: mojin04@gmail.com | GitHub: @mojin04-byte</p>
+            <p>&copy; 2026 Yongseung Seo. All rights reserved.</p>
+        </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
